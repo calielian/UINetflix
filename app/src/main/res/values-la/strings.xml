@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UINetflix</string>
+    <string name="horror">Horroris</string>
+    <string name="misterio">Mysterium</string>
+    <string name="suspense">Atrocitas</string>
+    <string name="minha_lista">INDEX MEUS</string>
+    <string name="detalhes">DETALIA</string>
+    <string name="assistir">Adesse</string>
+    <string name="lancamentos">Novae emissiones</string>
+    <string name="serie">Series</string>
+    <string name="filmes">Pelliculae</string>
+    <string name="minha_lista_top">Index meus</string>
+</resources>

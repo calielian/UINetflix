@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UINetflix</string>
+    <string name="horror">Horror</string>
+    <string name="misterio">Mistério</string>
+    <string name="suspense">Suspense</string>
+    <string name="minha_lista">MINHA LISTA</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="assistir">Assistir</string>
+    <string name="lancamentos">Lançamentos</string>
+    <string name="serie">Série</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista_top">Minha lista</string>
+</resources>
