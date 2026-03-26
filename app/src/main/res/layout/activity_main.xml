@@ -23,9 +23,9 @@
         android:layout_height="92dp"
         android:layout_marginTop="4dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/espacamento_r"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/espacamento_l"
         app:layout_constraintTop_toTopOf="@+id/guideline_top"
         app:layout_constraintVertical_bias="0.642"
         app:srcCompat="@drawable/logomovie" />
@@ -239,13 +239,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
         android:text="@string/nome"
-        android:textColor="@color/white"
 
-        app:layout_constraintTop_toBottomOf="@id/f2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/espacamento_r"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/espacamento_l"
+        app:layout_constraintTop_toBottomOf="@id/f2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
