@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/movie_img"
@@ -92,9 +91,9 @@
         android:id="@+id/netflix_logo"
         android:layout_width="76dp"
         android:layout_height="112dp"
+        app:layout_constraintStart_toStartOf="@id/movie_img"
         android:layout_marginStart="36dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/movie_img"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -177,7 +176,7 @@
         android:id="@+id/assistir"
         android:layout_width="131dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="@string/assistir"
         android:textColor="@color/white"
         android:textSize="13sp"
@@ -209,7 +208,9 @@
         android:layout_width="81dp"
         android:layout_height="46dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/espacamento_l"
+        app:layout_constraintEnd_toStartOf="@+id/f2"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/espacamento_l"
         app:layout_constraintTop_toBottomOf="@+id/lancamento"
         app:srcCompat="@drawable/f1" />
 
@@ -219,7 +220,7 @@
         android:layout_height="46dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toStartOf="@+id/f3"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/f1"
         app:layout_constraintTop_toBottomOf="@+id/movie_img"
         app:srcCompat="@drawable/f2" />
@@ -228,11 +229,9 @@
         android:id="@+id/f3"
         android:layout_width="83dp"
         android:layout_height="46dp"
-        android:layout_marginStart="256dp"
         android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/espacamento_r"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/espacamento_l"
+        app:layout_constraintStart_toEndOf="@id/f2"
+        app:layout_constraintEnd_toEndOf="@id/espacamento_r"
         app:layout_constraintTop_toBottomOf="@+id/movie_img"
         app:srcCompat="@drawable/f3" />
 
@@ -245,8 +244,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/espacamento_r"
         app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/espacamento_r"
         app:layout_constraintStart_toStartOf="@+id/espacamento_l"
         app:layout_constraintTop_toBottomOf="@id/f2" />
 
